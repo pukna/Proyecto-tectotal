@@ -15,9 +15,9 @@ class CreateAccountingSeatsTable extends Migration
     {
         Schema::create('accounting_seats', function (Blueprint $table) {
             $table->id();
-            $table->body();
-            $table->devit();
-            $table->credit();
+            $table->string("body");
+            $table->string("devit");
+            $table->string("credit");
             $table->timestamps();
         });
     }

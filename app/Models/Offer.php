@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Offer extends Model
 {
+    protected $fillable = [ 'type','nameCustumer','reference','expiration','name','body'];
     use HasFactory;
 }

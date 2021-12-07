@@ -15,11 +15,10 @@ class CreateQuotesTable extends Migration
     {
         Schema::create('quotes', function (Blueprint $table) {
             $table->id();
-            $table->document();
-            $table->state();
-            $table->price();
-            $table->deliver();
-            $table->id();
+            $table->string("document");
+            $table->string("state");
+            $table->string("price");
+            $table->string("deliver");
             $table->timestamps();
         });
     }

@@ -15,15 +15,14 @@ class CreateSuppliersTable extends Migration
     {
         Schema::create('suppliers', function (Blueprint $table) {
             $table->id();
-            $table->typeDocument();
-            $table->typeSuppliers();
-            $table->accountingAccount();
-            $table->payTo();
-            $table->personContact();
-            $table->personContact();
-            $table->specialTaxpayer();
-            $table->telephone();
-            $table->iva();
+            $table->string("typeDocument");
+            $table->string("typeSuppliers");
+            $table->string("accountingAccount");
+            $table->string("payTo");
+            $table->string("personContact");
+            $table->string("specialTaxpayer");
+            $table->string("telephone");
+            $table->string("iva");
             $table->timestamps();
         });
     }

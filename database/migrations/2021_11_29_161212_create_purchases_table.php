@@ -15,9 +15,9 @@ class CreatePurchasesTable extends Migration
     {
         Schema::create('purchases', function (Blueprint $table) {
             $table->id();
-            $table->fech();
-            $table->fechExpedition();
-            $table->totalPrice();
+            $table->string("fech");
+            $table->string("fechExpedition");
+            $table->string("totalPrice");
             $table->timestamps();
         });
     }

@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class AccountingSeat extends Model
 {
+    protected $fillable = [ 'body','devit','credit'];
     use HasFactory;
 }

@@ -15,11 +15,11 @@ class CreateKardexesTable extends Migration
     {
         Schema::create('kardexes', function (Blueprint $table) {
             $table->id();
-            $table->type();
-            $table->fechIn();
-            $table->fechaOut();
-            $table->amount();
-            $table->price();
+            $table->string("type");
+            $table->string("fechIn");
+            $table->string("fechaOut");
+            $table->string("amount");
+            $table->string("price");
             $table->timestamps();
         });
     }

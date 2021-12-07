@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Kardex extends Model
 {
+    protected $fillable = [ 'type','fechIn','fechOut','amount','price'];
     use HasFactory;
 }

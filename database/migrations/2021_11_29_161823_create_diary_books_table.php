@@ -15,9 +15,9 @@ class CreateDiaryBooksTable extends Migration
     {
         Schema::create('diary_books', function (Blueprint $table) {
             $table->id();
-            $table->body();
-            $table->devit();
-            $table->credit();
+            $table->string("body");
+            $table->string("devit");
+            $table->string("credit");
             $table->timestamps();
         });
     }

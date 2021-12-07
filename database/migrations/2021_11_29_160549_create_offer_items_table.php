@@ -15,9 +15,9 @@ class CreateOfferItemsTable extends Migration
     {
         Schema::create('offer_items', function (Blueprint $table) {
             $table->id();
-            $table->name();
-            $table->amount();
-            $table->unit();
+            $table->string("name");
+            $table->string("amount");
+            $table->string("unit");
             $table->timestamps();
         });
     }

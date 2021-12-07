@@ -15,7 +15,7 @@ class CreateWerehousesTable extends Migration
     {
         Schema::create('werehouses', function (Blueprint $table) {
             $table->id();
-            $table->name();
+            $table->string("name");
             $table->timestamps();
         });
     }
