@@ -17,12 +17,13 @@ class CreateSuppliersTable extends Migration
             $table->id();
             $table->string("typeDocument");
             $table->string("typeSuppliers");
-            $table->string("accountingAccount");
-            $table->string("payTo");
-            $table->string("personContact");
+            $table->string("name");
+            $table->string("tradename");
+            $table->string("country");
             $table->string("specialTaxpayer");
             $table->string("telephone");
-            $table->string("iva");
+            $table->string("mail");
+            $table->string("address");
             $table->timestamps();
         });
     }
