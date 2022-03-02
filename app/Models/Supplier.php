@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class supplier extends Model
 {
 
-    protected $fillable = [ 'typeDocument','typeSuppliers','name','tradename','specialTaxpayer','telephone','mail','address'];
+    protected $fillable = ['id', 'typeDocument','typeSuppliers','name','tradename','country','specialTaxpayer','telephone','mail','address'];
     use HasFactory;
 }
