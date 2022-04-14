@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Kardex;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
@@ -19,6 +20,7 @@ class ArticleController extends Controller
     {
         $article = Article::create($request->all());
         return response()->json($article, 201);
+
     }
     public function update(Request $request, Article $article)
     {

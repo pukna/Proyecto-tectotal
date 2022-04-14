@@ -29,6 +29,8 @@ class ArticlesTableSeeder extends Seeder
                 'body' => $faker->text,
                 'catalogCode' => $faker->numberBetween(),
                 'amount' => $faker->randomDigit(),
+                'supplier_id' => $faker->randomDigit(1,10),
+
             ]);
         }
     }
