@@ -29,6 +29,7 @@ class ServicesTableSeeder extends Seeder
 
                 'name' => $faker->name,
                 'unit' => $faker->randomElement($units),
+                'supplier_id' => $faker->randomDigit(1,10),
 
 
 

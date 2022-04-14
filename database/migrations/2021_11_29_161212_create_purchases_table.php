@@ -15,11 +15,15 @@ class CreatePurchasesTable extends Migration
     {
         Schema::create('purchases', function (Blueprint $table) {
             $table->id();
+            $table->string("type");
+            $table->string("number");
             $table->string("fech");
-            $table->string("fechExpedition");
             $table->string("totalPrice");
+            $table->string("estado");
+
             $table->timestamps();
         });
+
     }
 
     /**
@@ -29,6 +33,9 @@ class CreatePurchasesTable extends Migration
      */
     public function down()
     {
+
+
         Schema::dropIfExists('purchases');
+
     }
 }

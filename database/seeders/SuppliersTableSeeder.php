@@ -39,6 +39,7 @@ class SuppliersTableSeeder extends Seeder
                 'mail' => $faker->email,
                 'address' => $faker->address,
 
+
             ]);
         }
     }

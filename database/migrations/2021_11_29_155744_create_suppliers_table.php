@@ -26,6 +26,8 @@ class CreateSuppliersTable extends Migration
             $table->string("address");
             $table->timestamps();
         });
+
+
     }
 
     /**
@@ -35,6 +37,9 @@ class CreateSuppliersTable extends Migration
      */
     public function down()
     {
+
         Schema::dropIfExists('suppliers');
+
+
     }
 }

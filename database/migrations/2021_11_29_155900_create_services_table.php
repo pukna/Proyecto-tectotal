@@ -19,6 +19,7 @@ class CreateServicesTable extends Migration
             $table->string("unit");
             $table->timestamps();
         });
+
     }
 
     /**
@@ -28,6 +29,7 @@ class CreateServicesTable extends Migration
      */
     public function down()
     {
+
         Schema::dropIfExists('services');
     }
 }

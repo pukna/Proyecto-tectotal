@@ -9,4 +9,8 @@ class Customer extends Model
 {
     protected $fillable = [ 'name','address','email','phone','creditLimit'];
     use HasFactory;
+    public function sales()
+    {
+        return $this->hasMany('App\Sales');
+    }
 }

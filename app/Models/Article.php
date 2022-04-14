@@ -9,4 +9,8 @@ class Article extends Model
 {
     protected $fillable = [ 'name','condition','unit','body','catalogCode','amount'];
     use HasFactory;
+    public function suppliers()
+    {
+        return $this->belongsToMany('App\Supplier');
+    }
 }

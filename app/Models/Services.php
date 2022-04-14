@@ -9,4 +9,8 @@ class services extends Model
 {
     protected $fillable = [ 'name','unit'];
     use HasFactory;
+    public function suppliers()
+    {
+        return $this->belongsToMany('App\Supplier');
+    }
 }
